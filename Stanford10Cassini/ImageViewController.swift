@@ -31,8 +31,7 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        imageURL = DemoURL.stanford
+//        imageURL = DemoURL.stanford
     }
     
     override func viewWillAppear(_ animated: Bool) {
