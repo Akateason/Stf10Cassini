@@ -84,9 +84,15 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="NJU-m9-KFf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bRx-by-CEZ"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tsp-a5-NEc">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="tsp-a5-NEc" firstAttribute="centerX" secondItem="aam-cT-MXi" secondAttribute="centerX" id="4Ze-PJ-niL"/>
+                            <constraint firstItem="tsp-a5-NEc" firstAttribute="centerY" secondItem="aam-cT-MXi" secondAttribute="centerY" id="5PU-mI-LQ5"/>
                             <constraint firstAttribute="bottom" secondItem="r9x-3C-7Ub" secondAttribute="bottom" id="IWA-Q2-hD3"/>
                             <constraint firstItem="r9x-3C-7Ub" firstAttribute="leading" secondItem="ldW-dH-LwN" secondAttribute="leading" id="YR1-TG-cIf"/>
                             <constraint firstAttribute="trailing" secondItem="r9x-3C-7Ub" secondAttribute="trailing" id="ZUV-do-iNR"/>
@@ -97,6 +103,7 @@
                     <navigationItem key="navigationItem" id="3pk-1E-Ce7"/>
                     <connections>
                         <outlet property="scrollView" destination="r9x-3C-7Ub" id="ag5-Wg-5WS"/>
+                        <outlet property="spinner" destination="tsp-a5-NEc" id="ysq-xx-Mc0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNb-Xn-LtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,6 +148,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="C40-1t-7jv"/>
+        <segue reference="ZwX-zV-Fby"/>
     </inferredMetricsTieBreakers>
 </document>
